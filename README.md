@@ -39,6 +39,3 @@ TanH y su derivada
 Visualización con Matplotlib
 
 
-✉️ Contacto
-
-Luis Daniel Quintero Gallegos
