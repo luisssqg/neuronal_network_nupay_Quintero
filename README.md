@@ -1,41 +1,53 @@
-📌 Descripción
+# Funciones de Activación y sus Derivadas
 
-Este proyecto grafica funciones de activación comunes en redes neuronales, incluyendo Sigmoid, ReLU y TanH, junto con sus derivadas.
+Este proyecto implementa y grafica las funciones de activación **Sigmoid, ReLU y TanH**, junto con sus respectivas derivadas. Estas funciones son esenciales en redes neuronales para introducir no linealidad y permitir el aprendizaje de patrones complejos.
 
-📂 Estructura del Proyecto
+## 📌 Requisitos
 
-📂 activation_functions/
-├── 📂 src/
-│   ├── sigmoid.py  # Implementación de Sigmoid y su derivada
-│   ├── relu.py     # Implementación de ReLU y su derivada
-│   ├── tanh.py     # Implementación de TanH y su derivada
-├── main.py         # Script principal para graficar las funciones
-├── README.md       # Documentación del proyecto
+Antes de ejecutar el código, asegúrate de tener instaladas las siguientes dependencias:
 
-🛠️ Instalación
-
-Asegúrate de tener Python y las siguientes dependencias instaladas:
-
+```bash
 pip install numpy matplotlib
+🚀 Ejecución
+Para ejecutar el script y visualizar las gráficas, simplemente corre:
 
-
-🚀 Uso
-
-Ejecuta el siguiente comando para visualizar las funciones de activación:
-
+bash
+Copiar
+Editar
 python main.py
+📂 Estructura del Proyecto
+css
+Copiar
+Editar
+project/
+│── src/
+│   │── sigmoid.py
+│   │── relu.py
+│   │── tanh.py
+│── main.py
+│── README.md
+📊 Descripción del Código
+main.py:
 
-Se generarán gráficos mostrando las funciones Sigmoid, ReLU y TanH junto con sus derivadas.
+Importa las funciones de activación y sus derivadas desde la carpeta src/.
+Genera un conjunto de valores en el rango [-5, 5].
+Grafica las funciones Sigmoid, ReLU y TanH junto con sus derivadas.
+Muestra todas las gráficas en una figura de Matplotlib.
+src/sigmoid.py:
 
+Implementa la función sigmoid(x) y su derivada sigmoid_derivative(x).
+src/relu.py:
 
-📈 Funcionalidad
+Implementa la función relu(x) y su derivada relu_derivative(x).
+src/tanh.py:
+
+Implementa la función tanh(x) y su derivada tanh_derivative(x).
+📷 Ejemplo de Salida
+El script generará una figura con seis gráficos mostrando cada función y su derivada:
 
 Sigmoid y su derivada
-
 ReLU y su derivada
-
 TanH y su derivada
-
-Visualización con Matplotlib
-
-
+📌 Notas
+Asegúrate de que la carpeta src/ contenga correctamente los archivos de las funciones de activación.
+Si usas un entorno virtual, activa el entorno antes de ejecutar el código.
